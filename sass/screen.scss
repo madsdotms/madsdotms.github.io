@@ -36,6 +36,18 @@ section {
 		-webkit-font-smoothing: antialiased;
 		text-rendering:optimizeLegibility;
 	}
+
+	.img-circle {
+		-webkit-filter: grayscale(100%);
+		-moz-filter: grayscale(100%);
+		filter: grayscale(100%);
+		border:2px solid white;
+		padding: 0.2em;
+		background-clip: content-box;
+		background: transparent;
+		margin:8px 0;
+		@include opacity(0.6);
+	}
 }
 
 // header
@@ -109,7 +121,8 @@ header {
 
 
 .section.color1 {
-	background:$color__green;
+	background:$color2;
+
 
 	h1,h2,h3 {
 		color:white;
@@ -121,7 +134,7 @@ header {
 		bottom: -30px;
 		content: '';
 		position: absolute;
-		border-top: 30px $color__green solid;
+		border-top: 30px $color2 solid;
 		border-left: transparent 30px solid;
 		border-right: transparent 30px solid;
 		z-index: 2;

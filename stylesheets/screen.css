@@ -7637,8 +7637,21 @@ section h2 {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+/* line 40, ../sass/screen.scss */
+section .img-circle {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  border: 2px solid white;
+  padding: 0.2em;
+  background-clip: content-box;
+  background: transparent;
+  margin: 8px 0;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
 
-/* line 42, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 header {
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
@@ -7646,60 +7659,60 @@ header {
   height: 60px;
   width: 100%;
 }
-/* line 48, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 header ul {
   list-style: none;
   padding-top: 18px;
 }
-/* line 54, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 header li {
   float: left;
   margin-left: 2em;
 }
-/* line 58, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 header a {
   color: white;
   text-transform: uppercase;
 }
-/* line 61, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 header a:hover {
   color: white;
   text-decoration: none;
 }
-/* line 63, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 header h1 {
   color: rgba(255, 255, 255, 0.2);
   font-weight: 900;
 }
-/* line 69, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 header h1 span {
   font-weight: 100;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .content {
   padding-top: 60px;
 }
 
-/* line 80, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .hero {
   background: #a2ccb4;
 }
-/* line 83, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .hero h1 {
   font-size: 90px;
 }
-/* line 85, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .hero h1 span {
   font-weight: 500;
 }
-/* line 89, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .hero h3 {
   font-weight: 200;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-/* line 94, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .hero:after {
   left: 4%;
   margin-left: 30px;
@@ -7713,22 +7726,22 @@ header h1 span {
   z-index: 2;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .section.color1 {
-  background: #09b39c;
+  background: #638f91;
 }
-/* line 114, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 .section.color1 h1, .section.color1 h2, .section.color1 h3 {
   color: white;
 }
-/* line 118, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .section.color1:after {
   right: 4%;
   left: auto;
   bottom: -30px;
   content: '';
   position: absolute;
-  border-top: 30px #09b39c solid;
+  border-top: 30px #638f91 solid;
   border-left: transparent 30px solid;
   border-right: transparent 30px solid;
   z-index: 2;
