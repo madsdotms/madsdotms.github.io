@@ -11,8 +11,8 @@ angular.module('myApp', [
 ]).
 config(function($stateProvider, $urlRouterProvider, $locationProvider) {
   
-  //$locationProvider.hashPrefix('!').html5Mode(true);
-  $locationProvider.hashPrefix('!');
+  $locationProvider.hashPrefix('!').html5Mode(true);
+  //$locationProvider.hashPrefix('!');
 
   // For any unmatched url, redirect to /state1
   $urlRouterProvider.otherwise("/home");
