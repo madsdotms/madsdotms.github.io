@@ -1,0 +1,145 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+// @import "compass/reset";
+@import "compass/css3";
+
+
+@import "site-settings";
+@import "vendor/bootstrap/bootstrap";
+
+
+
+
+// typo
+
+h1,h2,h3,h4,h5 {
+	font-family:$font-family-serif;
+}
+h1,h2 {color:white;letter-spacing:1px;font-weight:700;}
+h3 {
+	color:white;
+}
+
+i {
+	font-weight:200;
+}
+
+section {
+	padding:2em 0 4em 0;
+	position:relative;
+
+	h2 {
+		font-weight: 100;
+		-webkit-font-smoothing: antialiased;
+		text-rendering:optimizeLegibility;
+	}
+}
+
+// header
+header {
+	background:rgba(0,0,0,0.8);
+	position: fixed;
+	z-index:9999;
+	height:$main-header-height;
+	width:100%;
+	ul {
+		@extend .clearfix;
+		@extend .pull-right;
+		list-style:none;
+		padding-top:18px;
+	}
+	li {
+		float:left;
+		margin-left:2em;
+	}
+	a {
+		color:white;
+		text-transform: uppercase;
+		&:hover {color:white;text-decoration:none;}
+	}
+	h1 {
+		color:rgba(255,255,255,0.2);
+		font-weight: 900;
+		b {
+			// color:#00416F;
+		}
+		span {
+			font-weight: 100;
+		}
+	}
+}
+
+.content {
+	padding-top:$main-header-height;
+}
+
+
+.hero {
+	background:$color3;
+
+	h1 {
+		font-size:90px;
+		span {
+			font-weight: 500;
+		}
+	}
+	h3 {
+		font-weight:200;
+		-webkit-font-smoothing: antialiased;
+		text-rendering:optimizeLegibility;
+	}
+	&:after {
+		left: 4%;
+		margin-left:30px;
+		left: auto;
+		bottom: -30px;
+		content: '';
+		position: absolute;
+		border-top: 30px $color3 solid;
+		border-left: transparent 30px solid;
+		border-right: transparent 30px solid;
+		z-index: 2;
+	}
+}
+
+
+
+
+.section.color1 {
+	background:$color__green;
+
+	h1,h2,h3 {
+		color:white;
+	}
+
+	&:after {
+		right: 4%;
+		left: auto;
+		bottom: -30px;
+		content: '';
+		position: absolute;
+		border-top: 30px $color__green solid;
+		border-left: transparent 30px solid;
+		border-right: transparent 30px solid;
+		z-index: 2;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

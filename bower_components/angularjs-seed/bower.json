@@ -1,0 +1,25 @@
+{
+  "name": "angularjs-seed",
+  "version": "1.2.9",
+  "authors": [
+    "Alexey Volkov diproart@gmail.com"
+  ],
+  "description": "Angularjs latest libs like angular-seed but no other thing. Only libs.",
+  "main": "README.md",
+  "keywords": [
+    "angularjs",
+    "angular",
+    "javascript",
+    "bootstrap",
+    "seed"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/diproart/angularjs-seed",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
