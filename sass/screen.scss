@@ -47,6 +47,13 @@ section {
 		background: transparent;
 		margin:8px 0;
 		@include opacity(0.6);
+
+		&:hover {
+			-webkit-filter: grayscale(0);
+			-moz-filter: grayscale(0);
+			filter: grayscale(0);
+			@include opacity(1);
+		}
 	}
 }
 
@@ -70,6 +77,8 @@ header {
 	a {
 		color:white;
 		text-transform: uppercase;
+		font-weight:900;
+		letter-spacing: 4px;
 		&:hover {color:white;text-decoration:none;}
 	}
 	h1 {
@@ -91,9 +100,11 @@ header {
 
 .hero {
 	background:$color3;
-
 	h1 {
-		font-size:90px;
+		font-size:45px;		
+		@media (min-width: 1024px) {
+			font-size:90px;
+		}		
 		span {
 			font-weight: 500;
 		}
@@ -104,40 +115,59 @@ header {
 		text-rendering:optimizeLegibility;
 	}
 	&:after {
+		@extend %triangle;
 		left: 4%;
-		margin-left:30px;
-		left: auto;
-		bottom: -30px;
-		content: '';
-		position: absolute;
-		border-top: 30px $color3 solid;
-		border-left: transparent 30px solid;
-		border-right: transparent 30px solid;
-		z-index: 2;
+		right: auto;		
+		border-top: 30px $color3 solid;		
 	}
 }
 
-
-
-
 .section.color1 {
-	background:$color2;
-
-
+	background:$color1;
 	h1,h2,h3 {
 		color:white;
 	}
-
 	&:after {
+		@extend %triangle;
+		left: 4%;
+		right: auto;
+		border-top: 30px $color1 solid;		
+	}
+}
+.section.color2 {
+	background:$color2;
+	h1,h2,h3 {
+		color:white;
+	}
+	&:after {
+		@extend %triangle;
 		right: 4%;
 		left: auto;
-		bottom: -30px;
-		content: '';
-		position: absolute;
-		border-top: 30px $color2 solid;
-		border-left: transparent 30px solid;
-		border-right: transparent 30px solid;
-		z-index: 2;
+		border-top: 30px $color2 solid;		
+	}
+}
+.section.color3 {
+	background:$color3;
+	h1,h2,h3 {
+		color:white;
+	}
+	&:after {
+		@extend %triangle;
+		left: 4%;
+		right: auto;
+		border-top: 30px $color3 solid;		
+	}
+}
+.section.white {
+	background:white;
+	h1,h2,h3 {
+		color:black;
+	}
+	&:after {
+		@extend %triangle;
+		left: 4%;
+		right: auto;
+		border-top: 30px white solid;		
 	}
 }
 
@@ -147,6 +177,16 @@ header {
 
 
 
+
+// move to _helpers
+%triangle {
+	bottom: -30px;
+	content: '';
+	position: absolute;
+	border-left: transparent 30px solid;
+	border-right: transparent 30px solid;
+	z-index: 2;
+}
 
 
 

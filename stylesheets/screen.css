@@ -7650,8 +7650,16 @@ section .img-circle {
   opacity: 0.6;
   filter: alpha(opacity=60);
 }
+/* line 51, ../sass/screen.scss */
+section .img-circle:hover {
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  filter: grayscale(0);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 
-/* line 54, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 header {
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
@@ -7659,89 +7667,139 @@ header {
   height: 60px;
   width: 100%;
 }
-/* line 60, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 header ul {
   list-style: none;
   padding-top: 18px;
 }
-/* line 66, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 header li {
   float: left;
   margin-left: 2em;
 }
-/* line 70, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 header a {
   color: white;
   text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 4px;
 }
-/* line 73, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 header a:hover {
   color: white;
   text-decoration: none;
 }
-/* line 75, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 header h1 {
   color: rgba(255, 255, 255, 0.2);
   font-weight: 900;
 }
-/* line 81, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 header h1 span {
   font-weight: 100;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 .content {
   padding-top: 60px;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .hero {
   background: #a2ccb4;
 }
-/* line 95, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .hero h1 {
-  font-size: 90px;
+  font-size: 45px;
 }
-/* line 97, ../sass/screen.scss */
+@media (min-width: 1024px) {
+  /* line 103, ../sass/screen.scss */
+  .hero h1 {
+    font-size: 90px;
+  }
+}
+/* line 108, ../sass/screen.scss */
 .hero h1 span {
   font-weight: 500;
 }
-/* line 101, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .hero h3 {
   font-weight: 200;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-/* line 106, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .hero:after {
   left: 4%;
-  margin-left: 30px;
-  left: auto;
-  bottom: -30px;
-  content: '';
-  position: absolute;
+  right: auto;
   border-top: 30px #a2ccb4 solid;
-  border-left: transparent 30px solid;
-  border-right: transparent 30px solid;
-  z-index: 2;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .section.color1 {
-  background: #638f91;
+  background: #92b6a6;
 }
 /* line 127, ../sass/screen.scss */
 .section.color1 h1, .section.color1 h2, .section.color1 h3 {
   color: white;
 }
-/* line 131, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .section.color1:after {
+  left: 4%;
+  right: auto;
+  border-top: 30px #92b6a6 solid;
+}
+
+/* line 137, ../sass/screen.scss */
+.section.color2 {
+  background: #638f91;
+}
+/* line 139, ../sass/screen.scss */
+.section.color2 h1, .section.color2 h2, .section.color2 h3 {
+  color: white;
+}
+/* line 142, ../sass/screen.scss */
+.section.color2:after {
   right: 4%;
   left: auto;
+  border-top: 30px #638f91 solid;
+}
+
+/* line 149, ../sass/screen.scss */
+.section.color3 {
+  background: #a2ccb4;
+}
+/* line 151, ../sass/screen.scss */
+.section.color3 h1, .section.color3 h2, .section.color3 h3 {
+  color: white;
+}
+/* line 154, ../sass/screen.scss */
+.section.color3:after {
+  left: 4%;
+  right: auto;
+  border-top: 30px #a2ccb4 solid;
+}
+
+/* line 161, ../sass/screen.scss */
+.section.white {
+  background: white;
+}
+/* line 163, ../sass/screen.scss */
+.section.white h1, .section.white h2, .section.white h3 {
+  color: black;
+}
+/* line 166, ../sass/screen.scss */
+.section.white:after {
+  left: 4%;
+  right: auto;
+  border-top: 30px white solid;
+}
+
+/* line 182, ../sass/screen.scss */
+.hero:after, .section.color1:after, .section.color2:after, .section.color3:after, .section.white:after {
   bottom: -30px;
   content: '';
   position: absolute;
-  border-top: 30px #638f91 solid;
   border-left: transparent 30px solid;
   border-right: transparent 30px solid;
   z-index: 2;

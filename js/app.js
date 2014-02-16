@@ -23,6 +23,22 @@ config(function($stateProvider, $urlRouterProvider, $locationProvider) {
       url: "/home",
       templateUrl: "views/home.html"
     })
+    .state('cv', {
+      url: "/cv",
+      templateUrl: "views/cv.html"
+    })
+    .state('about', {
+      url: "/about",
+      templateUrl: "views/about.html"
+    })
+    .state('work', {
+      url: "/work",
+      templateUrl: "views/work.html"
+    })
+    .state('contact', {
+      url: "/contact",
+      templateUrl: "views/contact.html"
+    })
     .state('state1.list', {
       url: "/list",
       templateUrl: "partials/state1.list.html",
