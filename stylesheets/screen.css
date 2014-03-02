@@ -9751,6 +9751,123 @@ button.close {
   content: "\f196";
 }
 
+/* line 1, ../sass/_header.scss */
+header li a {
+  font-family: Montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 10, ../sass/_header.scss */
+header {
+  background: rgba(255, 255, 255, 0.85);
+  position: fixed;
+  z-index: 9999;
+  min-height: 60px;
+  width: 100%;
+}
+/* line 16, ../sass/_header.scss */
+header ul {
+  list-style: none;
+  padding-top: 4px;
+}
+/* line 22, ../sass/_header.scss */
+header li {
+  float: left;
+  position: relative;
+}
+/* line 27, ../sass/_header.scss */
+header a {
+  color: black;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+/* line 32, ../sass/_header.scss */
+header a:hover {
+  color: black;
+  text-decoration: none;
+}
+/* line 37, ../sass/_header.scss */
+header a.active:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #989898;
+  bottom: -9px;
+  left: 0;
+  right: 0;
+  margin-left: -1px;
+  -webkit-transition: all 0.5s ease 0;
+  transition: all 0.5s ease 0;
+}
+/* line 51, ../sass/_header.scss */
+header h1 {
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: 900;
+}
+/* line 57, ../sass/_header.scss */
+header h1 span {
+  font-weight: 100;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 1024px) {
+  /* line 69, ../sass/_header.scss */
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+  }
+
+  /* line 76, ../sass/_header.scss */
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  /* line 80, ../sass/_header.scss */
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  /* line 85, ../sass/_header.scss */
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%;
+    /* 6 columns */
+  }
+
+  /* line 90, ../sass/_header.scss */
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%;
+    /* 6 columns */
+  }
+
+  /* line 94, ../sass/_header.scss */
+  .row-offcanvas-right.active {
+    right: 50%;
+    /* 6 columns */
+  }
+
+  /* line 98, ../sass/_header.scss */
+  .row-offcanvas-left.active {
+    left: 50%;
+    /* 6 columns */
+  }
+
+  /* line 102, ../sass/_header.scss */
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    /* 6 columns */
+  }
+}
 /* line 1, ../sass/_utils.scss */
 .imposed {
   display: inline-block;
@@ -9763,21 +9880,20 @@ section.techimages.ui-scrollfix {
   width: 100%;
 }
 
-/* line 18, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
+body {
+  overflow-x: hidden;
+  /* Prevent scroll on narrow devices */
+}
+
+/* line 22, ../sass/screen.scss */
 * {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 21, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 h1, h2, h3, h4, h5 {
   font-family: "Source Sans Pro", sans-serif;
-}
-
-/* line 24, ../sass/screen.scss */
-header li a {
-  font-family: Montserrat;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 /* line 30, ../sass/screen.scss */
@@ -9867,179 +9983,140 @@ section .fa-ul li:nth-child(4) {
   -webkit-transition: all 1s ease 2.5s;
   transition: all 1s ease 2.5s;
 }
-/* line 90, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
+section .fa-ul li:nth-child(5) {
+  -webkit-transition: all 1s ease 3s;
+  transition: all 1s ease 3s;
+}
+/* line 86, ../sass/screen.scss */
+section .fa-ul li:nth-child(6) {
+  -webkit-transition: all 1s ease 3.5s;
+  transition: all 1s ease 3.5s;
+}
+/* line 87, ../sass/screen.scss */
+section .fa-ul li:nth-child(7) {
+  -webkit-transition: all 1s ease 4s;
+  transition: all 1s ease 4s;
+}
+/* line 93, ../sass/screen.scss */
 section .fa-ul li.ui-scrollfix {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-/* line 99, ../sass/screen.scss */
-header {
-  background: rgba(255, 255, 255, 0.85);
-  position: fixed;
-  z-index: 9999;
-  height: 60px;
-  width: 100%;
-}
-/* line 105, ../sass/screen.scss */
-header ul {
-  list-style: none;
-  padding-top: 18px;
-}
-/* line 111, ../sass/screen.scss */
-header li {
-  float: left;
-  margin-left: 2em;
-  position: relative;
-}
-/* line 116, ../sass/screen.scss */
-header a {
-  color: black;
-  font-weight: 700;
-  letter-spacing: 4px;
-}
-/* line 121, ../sass/screen.scss */
-header a:hover {
-  color: black;
-  text-decoration: none;
-}
-/* line 126, ../sass/screen.scss */
-header a.active:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background: #989898;
-  bottom: -8px;
-  left: 0;
-  right: 0;
-  margin-left: -1px;
-  -webkit-transition: all 0.5s ease 0;
-  transition: all 0.5s ease 0;
-}
-/* line 140, ../sass/screen.scss */
-header h1 {
-  color: rgba(255, 255, 255, 0.2);
-  font-weight: 900;
-}
-/* line 146, ../sass/screen.scss */
-header h1 span {
-  font-weight: 100;
-}
-
-/* line 152, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .content {
   padding-top: 60px;
 }
 
-/* line 157, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .hero {
   background: #a2ccb4;
 }
-/* line 159, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 .hero h1 {
   font-size: 45px;
 }
 @media (min-width: 1024px) {
-  /* line 159, ../sass/screen.scss */
+  /* line 110, ../sass/screen.scss */
   .hero h1 {
     font-size: 90px;
   }
 }
-/* line 164, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .hero h1 span {
   font-weight: 500;
 }
-/* line 168, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .hero h3 {
   font-weight: 200;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-/* line 173, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .hero:after {
   left: 4%;
   right: auto;
   border-top: 30px #a2ccb4 solid;
 }
 
-/* line 181, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .section.color1 {
   background: #92b6a6;
 }
-/* line 183, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .section.color1 h1, .section.color1 h2, .section.color1 h3 {
   color: white;
 }
-/* line 186, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .section.color1:after {
   left: 4%;
   right: auto;
   border-top: 30px #92b6a6 solid;
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .section.color2 {
   background: #638f91;
 }
-/* line 195, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 .section.color2 h1, .section.color2 h2, .section.color2 h3 {
   color: white;
 }
-/* line 198, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 .section.color2:after {
   right: 4%;
   left: auto;
   border-top: 30px #638f91 solid;
 }
 
-/* line 205, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .section.color3 {
   background: #a2ccb4;
 }
-/* line 207, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .section.color3 h1, .section.color3 h2, .section.color3 h3 {
   color: white;
 }
-/* line 210, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .section.color3:after {
   left: 4%;
   right: auto;
   border-top: 30px #a2ccb4 solid;
 }
 
-/* line 217, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .section.white {
   background: white;
 }
-/* line 219, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 .section.white h1, .section.white h2, .section.white h3 {
   color: black;
 }
-/* line 222, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 .section.white:after {
   left: 4%;
   right: auto;
   border-top: 30px white solid;
 }
 
-/* line 235, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .map-canvas {
   width: 100%;
   height: 400px;
 }
-/* line 239, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .map-canvas h1 {
   color: black;
   font-size: 12px;
 }
-/* line 243, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 .map-canvas p {
   color: black;
   font-size: 10px;
 }
 
-/* line 254, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 .hero:after, .section.color1:after, .section.color2:after, .section.color3:after, .section.white:after {
   bottom: -30px;
   content: '';
