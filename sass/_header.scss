@@ -73,6 +73,11 @@ header {
             transition: all .25s ease-out;
   }
 
+  header li {
+    clear:both;
+    text-align: right;
+  }
+
   .row-offcanvas-right {
     right: 0;
   }

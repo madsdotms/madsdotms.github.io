@@ -9825,42 +9825,48 @@ header h1 span {
   }
 
   /* line 76, ../sass/_header.scss */
+  header li {
+    clear: both;
+    text-align: right;
+  }
+
+  /* line 81, ../sass/_header.scss */
   .row-offcanvas-right {
     right: 0;
   }
 
-  /* line 80, ../sass/_header.scss */
+  /* line 85, ../sass/_header.scss */
   .row-offcanvas-left {
     left: 0;
   }
 
-  /* line 85, ../sass/_header.scss */
+  /* line 90, ../sass/_header.scss */
   .row-offcanvas-right
   .sidebar-offcanvas {
     right: -50%;
     /* 6 columns */
   }
 
-  /* line 90, ../sass/_header.scss */
+  /* line 95, ../sass/_header.scss */
   .row-offcanvas-left
   .sidebar-offcanvas {
     left: -50%;
     /* 6 columns */
   }
 
-  /* line 94, ../sass/_header.scss */
+  /* line 99, ../sass/_header.scss */
   .row-offcanvas-right.active {
     right: 50%;
     /* 6 columns */
   }
 
-  /* line 98, ../sass/_header.scss */
+  /* line 103, ../sass/_header.scss */
   .row-offcanvas-left.active {
     left: 50%;
     /* 6 columns */
   }
 
-  /* line 102, ../sass/_header.scss */
+  /* line 107, ../sass/_header.scss */
   .sidebar-offcanvas {
     position: absolute;
     top: 0;
