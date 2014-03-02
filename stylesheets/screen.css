@@ -10134,5 +10134,5 @@ section .fa-ul li.ui-scrollfix {
   position: absolute;
   border-left: transparent 30px solid;
   border-right: transparent 30px solid;
-  z-index: 2;
+  z-index: 200;
 }
