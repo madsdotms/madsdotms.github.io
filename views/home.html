@@ -25,7 +25,7 @@
 				<img src="images/css3.png" class="img-circle img-thumbnail">
 			</div>
 			<div class="col-xs-4 col-sm-2">
-				<img src="images/angularjs-logo.png" class="img-circle img-thumbnail">
+				<img src="images/angularjs-logo.png" class="img-circle img-thumbnail"  ui-scrollfix="+200">
 			</div>						
 			<div class="col-xs-4 col-sm-2">
 				<img src="images/wordpress.png" class="img-circle img-thumbnail">
@@ -67,12 +67,50 @@
 		</div>
 	</div>
 </section>
-<section class="section color1">
+<section class="section toEdge">
+
+	<article id="map" ng-controller="MapCtrl">
+		<div ng-repeat="marker in myMarkers" ui-map-marker="myMarkers[$index]"
+	             ui-event="{'map-click': ''}">
+	    </div>
+
+	    <div ui-map-info-window="myInfoWindow">
+	          <h1>my place</h1>
+	          <p>is here</p>
+	        </div>
+	    </div>	
+
+		<div ui-map="myMap"ui-options="mapOptions" class="map-canvas" ui-event="{'map-click': 'centerMe()', 'map-zoom_changed': 'setZoomMessage(myMap.getZoom())' }"></div>
+
+	</article>
+	
+</section>		
+<section class="section color3">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
+				<h2 class="text-left">Some other headline</h2>	
+			</div>			
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-6">
+					
+			</div>
+			<div class="col-xs-6">
+				
 			</div>
 		</div>
 	</div>
-</section>			
+</section>	
+
+
+
+
+
+
+
+
+
+
 

@@ -9,13 +9,13 @@
 
 @import "site-settings";
 @import "vendor/bootstrap/bootstrap";
-
+@import "utils";
 
 
 
 // typo
 
-h1,h2,h3,h4,h5 {
+h1,h2,h3,h4,h5, header li a {
 	font-family:$font-family-serif;
 }
 h1,h2 {color:white;letter-spacing:1px;font-weight:700;}
@@ -30,6 +30,9 @@ i {
 section {
 	padding:2em 0 4em 0;
 	position:relative;
+	&.toEdge {
+		padding:0;
+	}
 
 	h2 {
 		font-weight: 100;
@@ -47,8 +50,9 @@ section {
 		background: transparent;
 		margin:8px 0;
 		@include opacity(0.6);
+		@include single-transition(all,0.5s,ease,0);
 
-		&:hover {
+		&:hover, &.ui-scrollfix {
 			-webkit-filter: grayscale(0);
 			-moz-filter: grayscale(0);
 			filter: grayscale(0);
@@ -56,10 +60,10 @@ section {
 		}
 	}
 }
-
+.ui-scrollfix {color:red !important;}
 // header
 header {
-	background:rgba(0,0,0,0.8);
+	background:rgba(255,255,255,0.8);
 	position: fixed;
 	z-index:9999;
 	height:$main-header-height;
@@ -73,13 +77,31 @@ header {
 	li {
 		float:left;
 		margin-left:2em;
+		position:relative;
 	}
 	a {
-		color:white;
-		text-transform: uppercase;
-		font-weight:900;
+		color:black;
+		// text-transform: uppercase;
+		font-weight:700;
 		letter-spacing: 4px;
-		&:hover {color:white;text-decoration:none;}
+		&:hover {
+			color:black;
+			text-decoration:none;
+		}
+		&.active {
+			&:after {
+				content: '';
+				position:absolute;
+				width: 100%;
+				height:3px;
+				background:$color__grey;
+				bottom: -8px;
+				left: 0;
+				right: 0;
+				margin-left: -1px;
+				@include single-transition(all,0.5s,ease,0);
+			}
+		}
 	}
 	h1 {
 		color:rgba(255,255,255,0.2);
@@ -173,6 +195,22 @@ header {
 
 
 
+
+
+// move to module/map
+.map-canvas { 
+	width:100%;
+	height: 400px; 
+
+	h1 {
+		color:black;
+		font-size:12px;
+	}
+	p {
+		color:black;
+		font-size:10px;	
+	}
+}
 
 
 

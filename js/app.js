@@ -1,9 +1,22 @@
 'use strict';
 
 
-// Declare app level module which depends on filters, and services
+
+
+
+
+
+function onGoogleReady() {
+  //alert('hej');
+  //angular.bootstrap(document.getElementById("map"), ['myApp']);
+
+  angular.element(document).ready(function() {
+         
+         // Declare app level module which depends on filters, and services
 angular.module('myApp', [
   'ui.router',
+  'ui.map',
+  'ui.utils',
   'myApp.filters',
   'myApp.services',
   'myApp.directives',
@@ -58,3 +71,18 @@ config(function($stateProvider, $urlRouterProvider, $locationProvider) {
         }
       })
 });
+         
+
+
+         var myAppModule = angular.module('app.ui-map', ['ui.map']);
+
+         angular.bootstrap(document, ['myApp']);
+  });
+
+}
+
+
+
+
+
+
