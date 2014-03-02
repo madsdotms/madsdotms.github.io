@@ -76,6 +76,10 @@ header {
   header li {
     clear:both;
     text-align: right;
+    float: right;
+    a.active:after {
+      bottom:2px;
+    } 
   }
 
   .row-offcanvas-right {
