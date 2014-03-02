@@ -9,12 +9,15 @@
 
 @import "site-settings";
 @import "vendor/bootstrap/bootstrap";
+@import "vendor/fontawesome/font-awesome";
 @import "utils";
 
 
 
 // typo
-
+* {
+	-webkit-font-smoothing: antialiased;
+}
 h1,h2,h3,h4,h5 {
 	font-family:$font-family-serif;
 }
@@ -65,8 +68,33 @@ section {
 			@include opacity(1);
 		}
 	}
+
+	&.techimages.ui-scrollfix {
+		@extend %afix;
+	}
+
+	.fa-ul {
+		li {
+			color:white;
+			font-size:20px;
+			&:nth-child(0) {@include single-transition(all,1.0s,ease,0.5);}
+			&:nth-child(1) {@include single-transition(all,1.0s,ease,1s);}
+			&:nth-child(2) {@include single-transition(all,1.0s,ease,1.5s);}
+			&:nth-child(3) {@include single-transition(all,1.0s,ease,2s);}
+			&:nth-child(4) {@include single-transition(all,1.0s,ease,2.5s);}
+			
+			
+
+			@include translate3d(175%,0,0);
+
+			&.ui-scrollfix {
+				@include translate3d(0,0,0);	
+			}
+		}
+	}
+
 }
-.ui-scrollfix {color:red !important;}
+
 // header
 header {
 	background:rgba(255,255,255,0.85);
