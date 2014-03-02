@@ -19,7 +19,7 @@ angular.module('myApp.controllers', []).
     	zoom: 14,
     	draggable: false,
     	scrollwheel: false,
-    	panControl: false
+    	panControl: false,
     	mapTypeId: google.maps.MapTypeId.ROADMAP,
     	mapTypeControl: false,
     	styles: mapStyle      
