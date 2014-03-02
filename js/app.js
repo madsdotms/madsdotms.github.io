@@ -17,6 +17,8 @@ angular.module('myApp', [
   'ui.router',
   'ui.map',
   'ui.utils',
+  'angulartics', 
+  'angulartics.google.analytics',
   'myApp.filters',
   'myApp.services',
   'myApp.directives',
