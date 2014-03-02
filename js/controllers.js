@@ -15,12 +15,14 @@ angular.module('myApp.controllers', []).
     
 
     $scope.mapOptions = {
-      center: new google.maps.LatLng(55.678725, 12.552899),
-      zoom: 14,
-      scrollwheel: false,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      mapTypeControl: false,
-      styles: mapStyle      
+    	center: new google.maps.LatLng(55.678725, 12.552899),
+    	zoom: 14,
+    	draggable: false,
+    	scrollwheel: false,
+    	panControl: false
+    	mapTypeId: google.maps.MapTypeId.ROADMAP,
+    	mapTypeControl: false,
+    	styles: mapStyle      
     };
 
     setTimeout(function(){
