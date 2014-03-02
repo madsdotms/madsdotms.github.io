@@ -15,9 +15,15 @@
 
 // typo
 
-h1,h2,h3,h4,h5, header li a {
+h1,h2,h3,h4,h5 {
 	font-family:$font-family-serif;
 }
+header li a {
+	font-family:Montserrat;
+	font-weight:700;
+	text-transform:uppercase;
+}
+
 h1,h2 {color:white;letter-spacing:1px;font-weight:700;}
 h3 {
 	color:white;
@@ -63,7 +69,7 @@ section {
 .ui-scrollfix {color:red !important;}
 // header
 header {
-	background:rgba(255,255,255,0.8);
+	background:rgba(255,255,255,0.85);
 	position: fixed;
 	z-index:9999;
 	height:$main-header-height;
