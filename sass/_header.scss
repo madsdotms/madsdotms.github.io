@@ -58,6 +58,21 @@ header {
       font-weight: 100;
     }
   }
+  .fa.fa-bars {
+    font-size:1.5em;
+    color:white;
+    &:after {
+      content:'';
+      border-radius:50%;      
+      background:rgba(0,0,0,0.75);
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
 }
 
 
@@ -65,7 +80,7 @@ header {
  * Off Canvas
  * --------------------------------------------------
  */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
   .row-offcanvas {
     position: relative;
     -webkit-transition: all .25s ease-out;

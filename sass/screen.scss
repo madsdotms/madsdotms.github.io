@@ -12,6 +12,7 @@
 @import "vendor/fontawesome/font-awesome";
 @import "header";
 @import "utils";
+@import "footer";
 
 
 body {
@@ -50,13 +51,20 @@ section {
 	}
 
 	.img-circle {
+		min-width: 100%;
+		//min-height:165px;
+
+		&:before{content:"";display:block;margin-top:100%;}
+
 		-webkit-filter: grayscale(100%);
 		-moz-filter: grayscale(100%);
 		filter: grayscale(100%);
-		border:2px solid white;
+		border:2px solid grey;
 		padding: 0.2em;
 		background-clip: content-box;
-		background: transparent;
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position:center center;
 		margin:8px 0;
 		@include opacity(0.6);
 		@include single-transition(all,0.5s,ease,0);
