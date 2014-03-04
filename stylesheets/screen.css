@@ -9753,70 +9753,110 @@ button.close {
 
 /* line 1, ../sass/_header.scss */
 header li a {
-  font-family: Montserrat;
-  font-weight: 700;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  letter-spacing: 8px;
+  color: white;
+  font-weight: normal;
   text-transform: uppercase;
 }
 
-/* line 10, ../sass/_header.scss */
+/* line 14, ../sass/_header.scss */
 header {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(170, 178, 181, 0.85);
   position: fixed;
   z-index: 9999;
   min-height: 60px;
   width: 100%;
 }
-/* line 16, ../sass/_header.scss */
+/* line 22, ../sass/_header.scss */
+header .svg-box {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 0 0 -20px;
+  width: 400px;
+  overflow: hidden;
+  max-height: 60px;
+}
+/* line 31, ../sass/_header.scss */
+header .shape {
+  stroke-dasharray: 200 540;
+  stroke-dashoffset: -492;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: #19f6e8;
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+/* line 40, ../sass/_header.scss */
+header .text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: 8px;
+  padding-left: 8px;
+  color: #fff;
+  top: -48px;
+  position: relative;
+}
+/* line 50, ../sass/_header.scss */
+header .svg-box:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+/* line 57, ../sass/_header.scss */
 header ul {
   list-style: none;
   padding-top: 4px;
 }
-/* line 22, ../sass/_header.scss */
+/* line 63, ../sass/_header.scss */
 header li {
   float: left;
   position: relative;
 }
-/* line 27, ../sass/_header.scss */
+/* line 68, ../sass/_header.scss */
 header a {
   color: black;
   font-weight: 700;
   letter-spacing: 2px;
 }
-/* line 32, ../sass/_header.scss */
+/* line 73, ../sass/_header.scss */
 header a:hover {
   color: black;
   text-decoration: none;
 }
-/* line 37, ../sass/_header.scss */
+/* line 78, ../sass/_header.scss */
 header a.active:after {
   content: '';
   position: absolute;
   width: 100%;
-  height: 3px;
+  height: 4px;
   background: #989898;
-  bottom: -9px;
+  bottom: -6px;
   left: 0;
   right: 0;
   margin-left: -1px;
   -webkit-transition: all 0.5s ease 0;
   transition: all 0.5s ease 0;
 }
-/* line 51, ../sass/_header.scss */
+/* line 92, ../sass/_header.scss */
 header h1 {
   color: rgba(255, 255, 255, 0.2);
   font-weight: 900;
 }
-/* line 57, ../sass/_header.scss */
+/* line 98, ../sass/_header.scss */
 header h1 span {
   font-weight: 100;
 }
-/* line 61, ../sass/_header.scss */
+/* line 102, ../sass/_header.scss */
 header .fa.fa-bars {
   font-size: 1.5em;
   color: white;
   padding-top: 3px;
 }
-/* line 66, ../sass/_header.scss */
+/* line 107, ../sass/_header.scss */
 header .fa.fa-bars .hex {
   margin: 0 12px;
   width: 23px;
@@ -9860,7 +9900,7 @@ header .fa.fa-bars .hex:after {
  * --------------------------------------------------
  */
 @media screen and (max-width: 767px) {
-  /* line 94, ../sass/_header.scss */
+  /* line 135, ../sass/_header.scss */
   .row-offcanvas {
     position: relative;
     -webkit-transition: all .25s ease-out;
@@ -9868,54 +9908,54 @@ header .fa.fa-bars .hex:after {
     transition: all .25s ease-out;
   }
 
-  /* line 101, ../sass/_header.scss */
+  /* line 142, ../sass/_header.scss */
   header li {
     clear: both;
     text-align: right;
     float: right;
   }
-  /* line 105, ../sass/_header.scss */
+  /* line 146, ../sass/_header.scss */
   header li a.active:after {
     bottom: 2px;
   }
 
-  /* line 110, ../sass/_header.scss */
+  /* line 151, ../sass/_header.scss */
   .row-offcanvas-right {
     right: 0;
   }
 
-  /* line 114, ../sass/_header.scss */
+  /* line 155, ../sass/_header.scss */
   .row-offcanvas-left {
     left: 0;
   }
 
-  /* line 119, ../sass/_header.scss */
+  /* line 160, ../sass/_header.scss */
   .row-offcanvas-right
   .sidebar-offcanvas {
     right: -50%;
     /* 6 columns */
   }
 
-  /* line 124, ../sass/_header.scss */
+  /* line 165, ../sass/_header.scss */
   .row-offcanvas-left
   .sidebar-offcanvas {
     left: -50%;
     /* 6 columns */
   }
 
-  /* line 128, ../sass/_header.scss */
+  /* line 169, ../sass/_header.scss */
   .row-offcanvas-right.active {
     right: 50%;
     /* 6 columns */
   }
 
-  /* line 132, ../sass/_header.scss */
+  /* line 173, ../sass/_header.scss */
   .row-offcanvas-left.active {
     left: 50%;
     /* 6 columns */
   }
 
-  /* line 136, ../sass/_header.scss */
+  /* line 177, ../sass/_header.scss */
   .sidebar-offcanvas {
     position: absolute;
     top: 0;
@@ -9937,10 +9977,46 @@ section.techimages.ui-scrollfix {
 
 /* line 1, ../sass/_footer.scss */
 footer {
-  background: black;
+  background: #aab2b5;
   width: 100%;
   min-height: 160px;
   z-index: 99999;
+  padding-top: 20px;
+}
+/* line 13, ../sass/_footer.scss */
+footer .svg-box {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 0 0 -20px;
+  width: 400px;
+}
+/* line 20, ../sass/_footer.scss */
+footer .shape {
+  stroke-dasharray: 200 540;
+  stroke-dashoffset: -492;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: #19f6e8;
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+/* line 29, ../sass/_footer.scss */
+footer .text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: 8px;
+  padding-left: 8px;
+  color: #fff;
+  top: -48px;
+  position: relative;
+}
+/* line 39, ../sass/_footer.scss */
+footer .svg-box:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
 }
 
 /* line 19, ../sass/screen.scss */

@@ -1,10 +1,51 @@
 footer {
-	background:black;
+	background:#aab2b5;
 	// position:fixed;
 	width:100%;
 
 	min-height:160px;
 	// margin-top:-60px;
-	z-index:99999
+	z-index:99999;
+	padding-top:20px;
+
+
+
+.svg-box {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 0 0 -20px;
+  width: 400px;  
+}
+.shape {
+  stroke-dasharray: 200 540;
+  stroke-dashoffset: -492;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: #19f6e8;
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+  font-family: $font-family-serif;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: 8px;
+  padding-left: 8px;
+  color: #fff;
+  top: -48px;
+  position: relative;
+}
+.svg-box:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+
+
+
+
+
+
 
 }
