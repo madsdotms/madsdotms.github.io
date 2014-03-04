@@ -9814,18 +9814,45 @@ header h1 span {
 header .fa.fa-bars {
   font-size: 1.5em;
   color: white;
+  padding-top: 3px;
 }
-/* line 64, ../sass/_header.scss */
-header .fa.fa-bars:after {
-  content: '';
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.75);
+/* line 66, ../sass/_header.scss */
+header .fa.fa-bars .hex {
+  margin: 0 12px;
+  width: 23px;
+  height: 40px;
+  background-color: black;
   position: absolute;
-  height: 100%;
-  width: 100%;
+  position: absolute;
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  margin: auto;
   top: 0;
+  bottom: 0;
   left: 0;
+  right: 0;
   z-index: -1;
+}
+/* line 9, ../sass/_mixins.scss */
+header .fa.fa-bars .hex:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-right: 12px solid black;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  left: -12px;
+}
+/* line 18, ../sass/_mixins.scss */
+header .fa.fa-bars .hex:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  right: -12px;
+  border-left: 12px solid black;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
 }
 
 /*
@@ -9833,7 +9860,7 @@ header .fa.fa-bars:after {
  * --------------------------------------------------
  */
 @media screen and (max-width: 767px) {
-  /* line 84, ../sass/_header.scss */
+  /* line 94, ../sass/_header.scss */
   .row-offcanvas {
     position: relative;
     -webkit-transition: all .25s ease-out;
@@ -9841,54 +9868,54 @@ header .fa.fa-bars:after {
     transition: all .25s ease-out;
   }
 
-  /* line 91, ../sass/_header.scss */
+  /* line 101, ../sass/_header.scss */
   header li {
     clear: both;
     text-align: right;
     float: right;
   }
-  /* line 95, ../sass/_header.scss */
+  /* line 105, ../sass/_header.scss */
   header li a.active:after {
     bottom: 2px;
   }
 
-  /* line 100, ../sass/_header.scss */
+  /* line 110, ../sass/_header.scss */
   .row-offcanvas-right {
     right: 0;
   }
 
-  /* line 104, ../sass/_header.scss */
+  /* line 114, ../sass/_header.scss */
   .row-offcanvas-left {
     left: 0;
   }
 
-  /* line 109, ../sass/_header.scss */
+  /* line 119, ../sass/_header.scss */
   .row-offcanvas-right
   .sidebar-offcanvas {
     right: -50%;
     /* 6 columns */
   }
 
-  /* line 114, ../sass/_header.scss */
+  /* line 124, ../sass/_header.scss */
   .row-offcanvas-left
   .sidebar-offcanvas {
     left: -50%;
     /* 6 columns */
   }
 
-  /* line 118, ../sass/_header.scss */
+  /* line 128, ../sass/_header.scss */
   .row-offcanvas-right.active {
     right: 50%;
     /* 6 columns */
   }
 
-  /* line 122, ../sass/_header.scss */
+  /* line 132, ../sass/_header.scss */
   .row-offcanvas-left.active {
     left: 50%;
     /* 6 columns */
   }
 
-  /* line 126, ../sass/_header.scss */
+  /* line 136, ../sass/_header.scss */
   .sidebar-offcanvas {
     position: absolute;
     top: 0;
@@ -9916,55 +9943,55 @@ footer {
   z-index: 99999;
 }
 
-/* line 18, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 body {
   overflow-x: hidden;
   /* Prevent scroll on narrow devices */
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 * {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 h1, h2, h3, h4, h5 {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 h1, h2 {
   color: white;
   letter-spacing: 1px;
   font-weight: 700;
 }
 
-/* line 32, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 h3 {
   color: white;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 i {
   font-weight: 200;
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 section {
   padding: 2em 0 4em 0;
   position: relative;
 }
-/* line 43, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 section.toEdge {
   padding: 0;
 }
-/* line 47, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 section h2 {
   font-weight: 100;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-/* line 53, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 section .img-circle {
   min-width: 100%;
   -webkit-filter: grayscale(100%);
@@ -9982,13 +10009,13 @@ section .img-circle {
   -webkit-transition: all 0.5s ease 0;
   transition: all 0.5s ease 0;
 }
-/* line 57, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 section .img-circle:before {
   content: "";
   display: block;
   margin-top: 100%;
 }
-/* line 72, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 section .img-circle:hover, section .img-circle.ui-scrollfix {
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
@@ -9996,172 +10023,172 @@ section .img-circle:hover, section .img-circle.ui-scrollfix {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-/* line 85, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 section .fa-ul li {
   color: white;
   font-size: 20px;
   -webkit-transform: translate3d(175%, 0, 0);
   transform: translate3d(175%, 0, 0);
 }
-/* line 88, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 section .fa-ul li:nth-child(0) {
   -webkit-transition: all 1s ease 0.5;
   transition: all 1s ease 0.5;
 }
-/* line 89, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 section .fa-ul li:nth-child(1) {
   -webkit-transition: all 1s ease 1s;
   transition: all 1s ease 1s;
 }
-/* line 90, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 section .fa-ul li:nth-child(2) {
   -webkit-transition: all 1s ease 1.5s;
   transition: all 1s ease 1.5s;
 }
-/* line 91, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 section .fa-ul li:nth-child(3) {
   -webkit-transition: all 1s ease 2s;
   transition: all 1s ease 2s;
 }
-/* line 92, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 section .fa-ul li:nth-child(4) {
   -webkit-transition: all 1s ease 2.5s;
   transition: all 1s ease 2.5s;
 }
-/* line 93, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 section .fa-ul li:nth-child(5) {
   -webkit-transition: all 1s ease 3s;
   transition: all 1s ease 3s;
 }
-/* line 94, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 section .fa-ul li:nth-child(6) {
   -webkit-transition: all 1s ease 3.5s;
   transition: all 1s ease 3.5s;
 }
-/* line 95, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 section .fa-ul li:nth-child(7) {
   -webkit-transition: all 1s ease 4s;
   transition: all 1s ease 4s;
 }
-/* line 101, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 section .fa-ul li.ui-scrollfix {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .content {
   padding-top: 60px;
 }
 
-/* line 116, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .hero {
   background: #a2ccb4;
 }
-/* line 118, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .hero h1 {
   font-size: 45px;
 }
 @media (min-width: 1024px) {
-  /* line 118, ../sass/screen.scss */
+  /* line 119, ../sass/screen.scss */
   .hero h1 {
     font-size: 90px;
   }
 }
-/* line 123, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .hero h1 span {
   font-weight: 500;
 }
-/* line 127, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .hero h3 {
   font-weight: 200;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-/* line 132, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .hero:after {
   left: 4%;
   right: auto;
   border-top: 30px #a2ccb4 solid;
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .section.color1 {
   background: #92b6a6;
 }
-/* line 142, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 .section.color1 h1, .section.color1 h2, .section.color1 h3 {
   color: white;
 }
-/* line 145, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 .section.color1:after {
   left: 4%;
   right: auto;
   border-top: 30px #92b6a6 solid;
 }
 
-/* line 152, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .section.color2 {
   background: #638f91;
 }
-/* line 154, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .section.color2 h1, .section.color2 h2, .section.color2 h3 {
   color: white;
 }
-/* line 157, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .section.color2:after {
   right: 4%;
   left: auto;
   border-top: 30px #638f91 solid;
 }
 
-/* line 164, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .section.color3 {
   background: #a2ccb4;
 }
-/* line 166, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .section.color3 h1, .section.color3 h2, .section.color3 h3 {
   color: white;
 }
-/* line 169, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 .section.color3:after {
   left: 4%;
   right: auto;
   border-top: 30px #a2ccb4 solid;
 }
 
-/* line 176, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 .section.white {
   background: white;
 }
-/* line 178, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 .section.white h1, .section.white h2, .section.white h3 {
   color: black;
 }
-/* line 181, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .section.white:after {
   left: 4%;
   right: auto;
   border-top: 30px white solid;
 }
 
-/* line 194, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .map-canvas {
   width: 100%;
   height: 400px;
 }
-/* line 198, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 .map-canvas h1 {
   color: black;
   font-size: 12px;
 }
-/* line 202, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 .map-canvas p {
   color: black;
   font-size: 10px;
 }
 
-/* line 213, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .hero:after, .section.color1:after, .section.color2:after, .section.color3:after, .section.white:after {
   bottom: -30px;
   content: '';

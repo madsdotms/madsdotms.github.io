@@ -1,0 +1,27 @@
+@mixin hex ($height, $background){
+  $radius : round($height/sqrt(3)) ;
+  $half-radius : round($radius/2);
+  margin: 0 $half-radius;
+  width: $radius;
+  height: $height;
+  background-color: $background;
+  position: absolute;
+  &:before {
+    content: " ";
+    width: 0; height: 0;
+    border-right: $half-radius solid $background;
+    border-top: $height/2 solid transparent;
+    border-bottom: $height/2 solid transparent;
+    position: absolute;
+    left: $half-radius*-1;
+  }
+  &:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    right: $half-radius*-1;
+    border-left: $half-radius solid $background;
+    border-top: $height/2 solid transparent;
+    border-bottom: $height/2 solid transparent;
+  }
+}
