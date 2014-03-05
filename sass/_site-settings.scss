@@ -15,8 +15,10 @@ $color4: 				#C3D9C5;
 $color5: 				#AFD2BD;
 
 
-
-
+@media screen and (max-width: 767px) {
+$triangle-size:		12px;	
+}
+$triangle-size:		25px;
 
 // fonts
 $font-size-base:          16px !default;

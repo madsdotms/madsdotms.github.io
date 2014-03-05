@@ -134,7 +134,8 @@ section {
 		@extend %triangle;
 		left: 4%;
 		right: auto;		
-		border-top: 30px $color3 solid;		
+		border-top: $triangle-size $color3 solid;		
+		
 	}
 }
 
@@ -145,9 +146,9 @@ section {
 	}
 	&:after {
 		@extend %triangle;
-		left: 4%;
-		right: auto;
-		border-top: 30px $color1 solid;		
+		right: 4%;
+		left: auto;
+		border-top: $triangle-size $color1 solid;		
 	}
 }
 .section.color2 {
@@ -159,7 +160,7 @@ section {
 		@extend %triangle;
 		right: 4%;
 		left: auto;
-		border-top: 30px $color2 solid;		
+		border-top: $triangle-size $color2 solid;		
 	}
 }
 .section.color3 {
@@ -171,7 +172,7 @@ section {
 		@extend %triangle;
 		left: 4%;
 		right: auto;
-		border-top: 30px $color3 solid;		
+		border-top: $triangle-size $color3 solid;		
 	}
 }
 .section.white {
@@ -183,7 +184,7 @@ section {
 		@extend %triangle;
 		left: 4%;
 		right: auto;
-		border-top: 30px white solid;		
+		border-top: $triangle-size white solid;		
 	}
 }
 
@@ -212,7 +213,7 @@ section {
 
 // move to _helpers
 %triangle {
-	bottom: -30px;
+	bottom: -$triangle-size;
 	content: '';
 	position: absolute;
 	border-left: transparent 30px solid;

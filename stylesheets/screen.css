@@ -9763,7 +9763,7 @@ header li a {
 
 /* line 14, ../sass/_header.scss */
 header {
-  background: rgba(170, 178, 181, 0.85);
+  background: rgba(65, 65, 65, 0.85);
   position: fixed;
   z-index: 9999;
   min-height: 60px;
@@ -9977,21 +9977,22 @@ section.techimages.ui-scrollfix {
 
 /* line 1, ../sass/_footer.scss */
 footer {
-  background: #aab2b5;
+  background: #333;
   width: 100%;
-  min-height: 160px;
+  min-height: 400px;
   z-index: 99999;
   padding-top: 20px;
+  position: relative;
 }
-/* line 13, ../sass/_footer.scss */
+/* line 15, ../sass/_footer.scss */
 footer .svg-box {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  margin: 10px 0 0 -20px;
+  margin: 10px 0 0 -5px;
   width: 400px;
 }
-/* line 20, ../sass/_footer.scss */
+/* line 22, ../sass/_footer.scss */
 footer .shape {
   stroke-dasharray: 200 540;
   stroke-dashoffset: -492;
@@ -10001,7 +10002,7 @@ footer .shape {
   border-bottom: 5px solid black;
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
-/* line 29, ../sass/_footer.scss */
+/* line 31, ../sass/_footer.scss */
 footer .text {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;
@@ -10012,11 +10013,326 @@ footer .text {
   top: -48px;
   position: relative;
 }
-/* line 39, ../sass/_footer.scss */
+/* line 41, ../sass/_footer.scss */
 footer .svg-box:hover .shape {
   stroke-width: 2px;
   stroke-dashoffset: 0;
   stroke-dasharray: 760;
+}
+/* line 51, ../sass/_footer.scss */
+footer .hexes {
+  width: 335px;
+  height: 661px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+/* line 60, ../sass/_footer.scss */
+footer .honeycomb {
+  margin: 0 45px;
+  width: 89px;
+  height: 154px;
+  background-color: white;
+  position: absolute;
+  position: absolute;
+  opacity: 0.4;
+}
+/* line 9, ../sass/_mixins.scss */
+footer .honeycomb:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-right: 45px solid white;
+  border-top: 77px solid transparent;
+  border-bottom: 77px solid transparent;
+  position: absolute;
+  left: -45px;
+}
+/* line 18, ../sass/_mixins.scss */
+footer .honeycomb:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  right: -45px;
+  border-left: 45px solid white;
+  border-top: 77px solid transparent;
+  border-bottom: 77px solid transparent;
+}
+/* line 66, ../sass/_footer.scss */
+footer .type1 {
+  box-shadow: 0px 0px 0px white;
+  opacity: 0.1;
+}
+/* line 70, ../sass/_footer.scss */
+footer .type2 {
+  box-shadow: 0px 0px 10px white;
+  opacity: 0.2;
+}
+/* line 74, ../sass/_footer.scss */
+footer .type3 {
+  box-shadow: 0px 0px 20px white;
+  opacity: 0.4;
+}
+/* line 79, ../sass/_footer.scss */
+footer .terminal_honeycomb1 {
+  left: 193px;
+  top: 181px;
+}
+/* line 83, ../sass/_footer.scss */
+footer .terminal_honeycomb2 {
+  left: 193px;
+  top: 346px;
+}
+/* line 87, ../sass/_footer.scss */
+footer .terminal_honeycomb3 {
+  left: 51px;
+  top: 263px;
+}
+/* line 91, ../sass/_footer.scss */
+footer .terminal_honeycomb4 {
+  left: 51px;
+  top: 426px;
+}
+/* line 95, ../sass/_footer.scss */
+footer .terminal_honeycomb5 {
+  margin: 0 22px;
+  width: 43px;
+  height: 74px;
+  background-color: white;
+  position: absolute;
+  left: 0px;
+  top: 385px;
+}
+/* line 9, ../sass/_mixins.scss */
+footer .terminal_honeycomb5:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-right: 22px solid white;
+  border-top: 37px solid transparent;
+  border-bottom: 37px solid transparent;
+  position: absolute;
+  left: -22px;
+}
+/* line 18, ../sass/_mixins.scss */
+footer .terminal_honeycomb5:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  right: -22px;
+  border-left: 22px solid white;
+  border-top: 37px solid transparent;
+  border-bottom: 37px solid transparent;
+}
+/* line 100, ../sass/_footer.scss */
+footer .terminal_honeycomb6 {
+  margin: 0 22px;
+  width: 43px;
+  height: 74px;
+  background-color: white;
+  position: absolute;
+  left: 147px;
+  top: 226px;
+}
+/* line 9, ../sass/_mixins.scss */
+footer .terminal_honeycomb6:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-right: 22px solid white;
+  border-top: 37px solid transparent;
+  border-bottom: 37px solid transparent;
+  position: absolute;
+  left: -22px;
+}
+/* line 18, ../sass/_mixins.scss */
+footer .terminal_honeycomb6:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  right: -22px;
+  border-left: 22px solid white;
+  border-top: 37px solid transparent;
+  border-bottom: 37px solid transparent;
+}
+/* line 105, ../sass/_footer.scss */
+footer .terminal_honeycomb7 {
+  margin: 0 8px;
+  width: 16px;
+  height: 28px;
+  background-color: white;
+  position: absolute;
+  left: 137px;
+  top: 170px;
+}
+/* line 9, ../sass/_mixins.scss */
+footer .terminal_honeycomb7:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-right: 8px solid white;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  position: absolute;
+  left: -8px;
+}
+/* line 18, ../sass/_mixins.scss */
+footer .terminal_honeycomb7:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  right: -8px;
+  border-left: 8px solid white;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+}
+/* line 110, ../sass/_footer.scss */
+footer .terminal_honeycomb8 {
+  margin: 0 41px;
+  width: 81px;
+  height: 140px;
+  background-color: white;
+  position: absolute;
+  left: 293px;
+  top: 40px;
+}
+/* line 9, ../sass/_mixins.scss */
+footer .terminal_honeycomb8:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-right: 41px solid white;
+  border-top: 70px solid transparent;
+  border-bottom: 70px solid transparent;
+  position: absolute;
+  left: -41px;
+}
+/* line 18, ../sass/_mixins.scss */
+footer .terminal_honeycomb8:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  right: -41px;
+  border-left: 41px solid white;
+  border-top: 70px solid transparent;
+  border-bottom: 70px solid transparent;
+}
+/* line 115, ../sass/_footer.scss */
+footer .terminal_honeycomb9 {
+  margin: 0 19px;
+  width: 37px;
+  height: 64px;
+  background-color: white;
+  position: absolute;
+  left: 250px;
+  top: 0px;
+}
+/* line 9, ../sass/_mixins.scss */
+footer .terminal_honeycomb9:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-right: 19px solid white;
+  border-top: 32px solid transparent;
+  border-bottom: 32px solid transparent;
+  position: absolute;
+  left: -19px;
+}
+/* line 18, ../sass/_mixins.scss */
+footer .terminal_honeycomb9:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  right: -19px;
+  border-left: 19px solid white;
+  border-top: 32px solid transparent;
+  border-bottom: 32px solid transparent;
+}
+/* line 120, ../sass/_footer.scss */
+footer .terminal_honeycomb10 {
+  margin: 0 79px;
+  width: 158px;
+  height: 273px;
+  background-color: white;
+  position: absolute;
+  left: 234px;
+  top: 204px;
+}
+/* line 9, ../sass/_mixins.scss */
+footer .terminal_honeycomb10:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-right: 79px solid white;
+  border-top: 136.5px solid transparent;
+  border-bottom: 136.5px solid transparent;
+  position: absolute;
+  left: -79px;
+}
+/* line 18, ../sass/_mixins.scss */
+footer .terminal_honeycomb10:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  right: -79px;
+  border-left: 79px solid white;
+  border-top: 136.5px solid transparent;
+  border-bottom: 136.5px solid transparent;
+}
+/* line 125, ../sass/_footer.scss */
+footer .terminal_honeycomb11 {
+  margin: 0 64px;
+  width: 127px;
+  height: 220px;
+  background-color: white;
+  position: absolute;
+  left: 218px;
+  top: 438px;
+}
+/* line 9, ../sass/_mixins.scss */
+footer .terminal_honeycomb11:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-right: 64px solid white;
+  border-top: 110px solid transparent;
+  border-bottom: 110px solid transparent;
+  position: absolute;
+  left: -64px;
+}
+/* line 18, ../sass/_mixins.scss */
+footer .terminal_honeycomb11:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  right: -64px;
+  border-left: 64px solid white;
+  border-top: 110px solid transparent;
+  border-bottom: 110px solid transparent;
+}
+/* line 145, ../sass/_footer.scss */
+footer .icons {
+  margin-left: -20px;
+  width: 800px;
+  margin: 60px auto 0;
+  padding: 0;
+  cursor: pointer;
+}
+/* line 153, ../sass/_footer.scss */
+footer .icon {
+  width: 140px;
+  height: 140px;
+  padding-right: 20px;
+  fill: rgba(179, 195, 58, 0);
+  stroke: #b3c33a;
+  stroke-width: 2px;
+  transition: all 0.25s ease;
+}
+/* line 161, ../sass/_footer.scss */
+footer .icon:hover, footer .icon:focus {
+  fill: #b3c33a;
+  transition: all 0.15s ease;
 }
 
 /* line 19, ../sass/screen.scss */
@@ -10185,88 +10501,88 @@ section .fa-ul li.ui-scrollfix {
 .hero:after {
   left: 4%;
   right: auto;
-  border-top: 30px #a2ccb4 solid;
+  border-top: 25px #a2ccb4 solid;
 }
 
-/* line 141, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 .section.color1 {
   background: #92b6a6;
 }
-/* line 143, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .section.color1 h1, .section.color1 h2, .section.color1 h3 {
   color: white;
 }
-/* line 146, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .section.color1:after {
-  left: 4%;
-  right: auto;
-  border-top: 30px #92b6a6 solid;
+  right: 4%;
+  left: auto;
+  border-top: 25px #92b6a6 solid;
 }
 
-/* line 153, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .section.color2 {
   background: #638f91;
 }
-/* line 155, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .section.color2 h1, .section.color2 h2, .section.color2 h3 {
   color: white;
 }
-/* line 158, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .section.color2:after {
   right: 4%;
   left: auto;
-  border-top: 30px #638f91 solid;
+  border-top: 25px #638f91 solid;
 }
 
-/* line 165, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 .section.color3 {
   background: #a2ccb4;
 }
-/* line 167, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .section.color3 h1, .section.color3 h2, .section.color3 h3 {
   color: white;
 }
-/* line 170, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 .section.color3:after {
   left: 4%;
   right: auto;
-  border-top: 30px #a2ccb4 solid;
+  border-top: 25px #a2ccb4 solid;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 .section.white {
   background: white;
 }
-/* line 179, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .section.white h1, .section.white h2, .section.white h3 {
   color: black;
 }
-/* line 182, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 .section.white:after {
   left: 4%;
   right: auto;
-  border-top: 30px white solid;
+  border-top: 25px white solid;
 }
 
-/* line 195, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 .map-canvas {
   width: 100%;
   height: 400px;
 }
-/* line 199, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .map-canvas h1 {
   color: black;
   font-size: 12px;
 }
-/* line 203, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .map-canvas p {
   color: black;
   font-size: 10px;
 }
 
-/* line 214, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .hero:after, .section.color1:after, .section.color2:after, .section.color3:after, .section.white:after {
-  bottom: -30px;
+  bottom: -25px;
   content: '';
   position: absolute;
   border-left: transparent 30px solid;
