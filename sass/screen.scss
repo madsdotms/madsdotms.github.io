@@ -54,7 +54,8 @@ section {
 	.img-circle {
 		min-width: 100%;
 		//min-height:165px;
-
+		-webkit-backface-visibility: hidden;
+		
 		&:before{content:"";display:block;margin-top:100%;}
 
 		-webkit-filter: grayscale(100%);
@@ -135,7 +136,7 @@ section {
 		left: 4%;
 		right: auto;		
 		border-top: $triangle-size $color3 solid;		
-		
+
 	}
 }
 

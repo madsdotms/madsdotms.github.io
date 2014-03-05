@@ -10386,6 +10386,7 @@ section h2 {
 /* line 54, ../sass/screen.scss */
 section .img-circle {
   min-width: 100%;
+  -webkit-backface-visibility: hidden;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -10401,13 +10402,13 @@ section .img-circle {
   -webkit-transition: all 0.5s ease 0;
   transition: all 0.5s ease 0;
 }
-/* line 58, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 section .img-circle:before {
   content: "";
   display: block;
   margin-top: 100%;
 }
-/* line 73, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 section .img-circle:hover, section .img-circle.ui-scrollfix {
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
@@ -10415,172 +10416,172 @@ section .img-circle:hover, section .img-circle.ui-scrollfix {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-/* line 86, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 section .fa-ul li {
   color: white;
   font-size: 20px;
   -webkit-transform: translate3d(175%, 0, 0);
   transform: translate3d(175%, 0, 0);
 }
-/* line 89, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 section .fa-ul li:nth-child(0) {
   -webkit-transition: all 1s ease 0.5;
   transition: all 1s ease 0.5;
 }
-/* line 90, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 section .fa-ul li:nth-child(1) {
   -webkit-transition: all 1s ease 1s;
   transition: all 1s ease 1s;
 }
-/* line 91, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 section .fa-ul li:nth-child(2) {
   -webkit-transition: all 1s ease 1.5s;
   transition: all 1s ease 1.5s;
 }
-/* line 92, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 section .fa-ul li:nth-child(3) {
   -webkit-transition: all 1s ease 2s;
   transition: all 1s ease 2s;
 }
-/* line 93, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 section .fa-ul li:nth-child(4) {
   -webkit-transition: all 1s ease 2.5s;
   transition: all 1s ease 2.5s;
 }
-/* line 94, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 section .fa-ul li:nth-child(5) {
   -webkit-transition: all 1s ease 3s;
   transition: all 1s ease 3s;
 }
-/* line 95, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 section .fa-ul li:nth-child(6) {
   -webkit-transition: all 1s ease 3.5s;
   transition: all 1s ease 3.5s;
 }
-/* line 96, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 section .fa-ul li:nth-child(7) {
   -webkit-transition: all 1s ease 4s;
   transition: all 1s ease 4s;
 }
-/* line 102, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 section .fa-ul li.ui-scrollfix {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .content {
   padding-top: 60px;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 .hero {
   background: #a2ccb4;
 }
-/* line 119, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .hero h1 {
   font-size: 45px;
 }
 @media (min-width: 1024px) {
-  /* line 119, ../sass/screen.scss */
+  /* line 120, ../sass/screen.scss */
   .hero h1 {
     font-size: 90px;
   }
 }
-/* line 124, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .hero h1 span {
   font-weight: 500;
 }
-/* line 128, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .hero h3 {
   font-weight: 200;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-/* line 133, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .hero:after {
   left: 4%;
   right: auto;
   border-top: 25px #a2ccb4 solid;
 }
 
-/* line 142, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 .section.color1 {
   background: #92b6a6;
 }
-/* line 144, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 .section.color1 h1, .section.color1 h2, .section.color1 h3 {
   color: white;
 }
-/* line 147, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .section.color1:after {
   right: 4%;
   left: auto;
   border-top: 25px #92b6a6 solid;
 }
 
-/* line 154, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .section.color2 {
   background: #638f91;
 }
-/* line 156, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 .section.color2 h1, .section.color2 h2, .section.color2 h3 {
   color: white;
 }
-/* line 159, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .section.color2:after {
   right: 4%;
   left: auto;
   border-top: 25px #638f91 solid;
 }
 
-/* line 166, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .section.color3 {
   background: #a2ccb4;
 }
-/* line 168, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .section.color3 h1, .section.color3 h2, .section.color3 h3 {
   color: white;
 }
-/* line 171, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 .section.color3:after {
   left: 4%;
   right: auto;
   border-top: 25px #a2ccb4 solid;
 }
 
-/* line 178, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 .section.white {
   background: white;
 }
-/* line 180, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .section.white h1, .section.white h2, .section.white h3 {
   color: black;
 }
-/* line 183, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .section.white:after {
   left: 4%;
   right: auto;
   border-top: 25px white solid;
 }
 
-/* line 196, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .map-canvas {
   width: 100%;
   height: 400px;
 }
-/* line 200, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 .map-canvas h1 {
   color: black;
   font-size: 12px;
 }
-/* line 204, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 .map-canvas p {
   color: black;
   font-size: 10px;
 }
 
-/* line 215, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 .hero:after, .section.color1:after, .section.color2:after, .section.color3:after, .section.white:after {
   bottom: -25px;
   content: '';
