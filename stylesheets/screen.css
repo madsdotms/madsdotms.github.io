@@ -10027,8 +10027,9 @@ footer .hexes {
   right: 0;
   bottom: 0;
   overflow: hidden;
+  z-index: -1;
 }
-/* line 60, ../sass/_footer.scss */
+/* line 61, ../sass/_footer.scss */
 footer .honeycomb {
   margin: 0 45px;
   width: 89px;
@@ -10059,42 +10060,42 @@ footer .honeycomb:after {
   border-top: 77px solid transparent;
   border-bottom: 77px solid transparent;
 }
-/* line 66, ../sass/_footer.scss */
+/* line 67, ../sass/_footer.scss */
 footer .type1 {
   box-shadow: 0px 0px 0px white;
   opacity: 0.1;
 }
-/* line 70, ../sass/_footer.scss */
+/* line 71, ../sass/_footer.scss */
 footer .type2 {
   box-shadow: 0px 0px 10px white;
   opacity: 0.2;
 }
-/* line 74, ../sass/_footer.scss */
+/* line 75, ../sass/_footer.scss */
 footer .type3 {
   box-shadow: 0px 0px 20px white;
   opacity: 0.4;
 }
-/* line 79, ../sass/_footer.scss */
+/* line 80, ../sass/_footer.scss */
 footer .terminal_honeycomb1 {
   left: 193px;
   top: 181px;
 }
-/* line 83, ../sass/_footer.scss */
+/* line 84, ../sass/_footer.scss */
 footer .terminal_honeycomb2 {
   left: 193px;
   top: 346px;
 }
-/* line 87, ../sass/_footer.scss */
+/* line 88, ../sass/_footer.scss */
 footer .terminal_honeycomb3 {
   left: 51px;
   top: 263px;
 }
-/* line 91, ../sass/_footer.scss */
+/* line 92, ../sass/_footer.scss */
 footer .terminal_honeycomb4 {
   left: 51px;
   top: 426px;
 }
-/* line 95, ../sass/_footer.scss */
+/* line 96, ../sass/_footer.scss */
 footer .terminal_honeycomb5 {
   margin: 0 22px;
   width: 43px;
@@ -10125,7 +10126,7 @@ footer .terminal_honeycomb5:after {
   border-top: 37px solid transparent;
   border-bottom: 37px solid transparent;
 }
-/* line 100, ../sass/_footer.scss */
+/* line 101, ../sass/_footer.scss */
 footer .terminal_honeycomb6 {
   margin: 0 22px;
   width: 43px;
@@ -10156,7 +10157,7 @@ footer .terminal_honeycomb6:after {
   border-top: 37px solid transparent;
   border-bottom: 37px solid transparent;
 }
-/* line 105, ../sass/_footer.scss */
+/* line 106, ../sass/_footer.scss */
 footer .terminal_honeycomb7 {
   margin: 0 8px;
   width: 16px;
@@ -10187,7 +10188,7 @@ footer .terminal_honeycomb7:after {
   border-top: 14px solid transparent;
   border-bottom: 14px solid transparent;
 }
-/* line 110, ../sass/_footer.scss */
+/* line 111, ../sass/_footer.scss */
 footer .terminal_honeycomb8 {
   margin: 0 41px;
   width: 81px;
@@ -10218,7 +10219,7 @@ footer .terminal_honeycomb8:after {
   border-top: 70px solid transparent;
   border-bottom: 70px solid transparent;
 }
-/* line 115, ../sass/_footer.scss */
+/* line 116, ../sass/_footer.scss */
 footer .terminal_honeycomb9 {
   margin: 0 19px;
   width: 37px;
@@ -10249,7 +10250,7 @@ footer .terminal_honeycomb9:after {
   border-top: 32px solid transparent;
   border-bottom: 32px solid transparent;
 }
-/* line 120, ../sass/_footer.scss */
+/* line 121, ../sass/_footer.scss */
 footer .terminal_honeycomb10 {
   margin: 0 79px;
   width: 158px;
@@ -10280,7 +10281,7 @@ footer .terminal_honeycomb10:after {
   border-top: 136.5px solid transparent;
   border-bottom: 136.5px solid transparent;
 }
-/* line 125, ../sass/_footer.scss */
+/* line 126, ../sass/_footer.scss */
 footer .terminal_honeycomb11 {
   margin: 0 64px;
   width: 127px;
@@ -10311,7 +10312,7 @@ footer .terminal_honeycomb11:after {
   border-top: 110px solid transparent;
   border-bottom: 110px solid transparent;
 }
-/* line 145, ../sass/_footer.scss */
+/* line 146, ../sass/_footer.scss */
 footer .icons {
   margin-left: -20px;
   width: 800px;
@@ -10319,7 +10320,7 @@ footer .icons {
   padding: 0;
   cursor: pointer;
 }
-/* line 153, ../sass/_footer.scss */
+/* line 154, ../sass/_footer.scss */
 footer .icon {
   width: 140px;
   height: 140px;
@@ -10329,7 +10330,7 @@ footer .icon {
   stroke-width: 2px;
   transition: all 0.25s ease;
 }
-/* line 161, ../sass/_footer.scss */
+/* line 162, ../sass/_footer.scss */
 footer .icon:hover, footer .icon:focus {
   fill: #b3c33a;
   transition: all 0.15s ease;
