@@ -41,6 +41,15 @@ i {
 section {
 	padding:2em 0 4em 0;
 	position:relative;
+	
+
+	&.pattern-a {
+		background: url('/images/patterns/pattern-a.jpg');
+		background-position: 0 -240px;
+		background-repeat: repeat-x;
+		padding:3em 0 5.6em 0;
+	}
+
 	&.toEdge {
 		padding:0;
 	}
@@ -52,7 +61,7 @@ section {
 	}
 
 	.img-circle {
-		min-width: 100%;
+		min-width: 75%;
 		//min-height:165px;
 		-webkit-backface-visibility: hidden;
 		
@@ -135,7 +144,7 @@ section {
 		@extend %triangle;
 		left: 4%;
 		right: auto;		
-		border-top: $triangle-size $color3 solid;		
+		border-top: $triangle-size transparent solid;		
 
 	}
 }
