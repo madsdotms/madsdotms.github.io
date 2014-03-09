@@ -8,7 +8,7 @@ $color__green--light: 	#1EC6AA;
 
 $color__grey: 			#989898;
 
-$color1: 				#333;
+$color1: 				lighten(#333,10%);
 $color2: 				#638F91;
 $color3: 				#A2CCB4;
 $color4: 				#C3D9C5;
@@ -24,6 +24,13 @@ $triangle-size:		25px;
 $font-size-base:          16px !default;
 $font-family-sans-serif:  'Open Sans', sans-serif !default;
 $font-family-serif:       'Source Sans Pro', sans-serif !default;
+
+
+// footer social icons:
+
+$iconsize: 140px; 
+$cymbidium: #b3c33a;
+
 
 /*
 font-family: 'Open Sans', sans-serif;

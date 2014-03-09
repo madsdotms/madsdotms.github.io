@@ -38,6 +38,10 @@ i {
 	font-weight:200;
 }
 
+.hero h1 i {
+	@include long-shadow(text, rgba(179,195,58,0.3), 260, false, false, right);
+}
+
 section {
 	padding:2em 0 4em 0;
 	position:relative;
@@ -61,29 +65,33 @@ section {
 	}
 
 	.img-circle {
-		min-width: 75%;
+		min-width: 55%;
 		//min-height:165px;
 		-webkit-backface-visibility: hidden;
 		
 		&:before{content:"";display:block;margin-top:100%;}
 
 		-webkit-filter: grayscale(100%);
-		-moz-filter: grayscale(100%);
-		filter: grayscale(100%);
+		// -moz-filter: grayscale(100%);
+		
+		// filter: gray;
 		border:2px solid grey;
 		padding: 0.2em;
 		background-clip: content-box;
 		background-repeat: no-repeat;
 		background-size:cover;
+		background-color:transparent;
 		background-position:center center;
 		margin:8px 0;
 		@include opacity(0.6);
 		@include single-transition(all,0.5s,ease,0);
 
 		&:hover, &.ui-scrollfix {
+		
 			-webkit-filter: grayscale(0);
-			-moz-filter: grayscale(0);
+			// -moz-filter: grayscale(0);
 			filter: grayscale(0);
+			filter:none;
 			@include opacity(1);
 		}
 	}
@@ -121,6 +129,9 @@ section {
 
 .content {
 	padding-top:$main-header-height;
+	@media screen and (max-width: 767px) {
+		padding-top:0;	
+	}
 }
 
 

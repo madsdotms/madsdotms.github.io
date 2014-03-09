@@ -6,6 +6,7 @@ header li a {
   color: white;
   font-weight: normal;
   text-transform:uppercase;
+  @include single-transition(all,0.5s,ease,0);
 }
 
 
@@ -13,6 +14,9 @@ header li a {
 // header
 header {
   background:rgba(65,65,65,0.85);
+  @media screen and (max-width: 767px) {
+    background:transparent;  
+  }
   position: fixed;
   z-index:9999;
   min-height:$main-header-height;
@@ -22,7 +26,7 @@ header {
   .svg-box {
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  // transform: translateY(-50%);
   margin: 0 0 0 -20px;
   width: 400px;  
   overflow: hidden;

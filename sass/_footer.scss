@@ -6,7 +6,7 @@ footer {
 
 	min-height:400px;
 	// margin-top:-60px;
-	z-index:99999;
+	z-index:9;
 	padding-top:20px;
 	position:relative;
 
@@ -15,8 +15,8 @@ footer {
 .svg-box {
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
-  margin: 10px 0 0 -5px;
+  // transform: translateY(-50%);
+  margin: 20px 0 0 -5px;
   width: 400px;  
 }
 .shape {
@@ -132,8 +132,7 @@ footer {
 
 
 
-$iconsize: 140px; 
-$cymbidium: #b3c33a;
+
 
 // *, *:before, *:after {
 //   -webkit-box-sizing: border-box; 
