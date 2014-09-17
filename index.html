@@ -1,63 +1,176 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">        
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="NOINDEX, NOFOLLOW">
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>		
+	<!-- 	
+	 _____ ______   ________  ________  ________           ___  ________   ________     
+	|\   _ \  _   \|\   __  \|\   ___ \|\   ____\         |\  \|\   ___  \|\   ____\    
+	\ \  \\\__\ \  \ \  \|\  \ \  \_|\ \ \  \___|_        \ \  \ \  \\ \  \ \  \___|    
+	 \ \  \\|__| \  \ \   __  \ \  \ \\ \ \_____  \        \ \  \ \  \\ \  \ \  \       
+	  \ \  \    \ \  \ \  \ \  \ \  \_\\ \|____|\  \        \ \  \ \  \\ \  \ \  \____  
+	   \ \__\    \ \__\ \__\ \__\ \_______\____\_\  \        \ \__\ \__\\ \__\ \_______\
+	    \|__|     \|__|\|__|\|__|\|_______|\_________\        \|__|\|__| \|__|\|_______|
+	                                      \|_________|                                  
+	                                                                                    	                                                           
+	yes, i know about legacy browser optimization, but this is my own site so fuck 'em :-)
+	-->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>mads.ms - scrolling is cool</title>
+		
+		
+		
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/devices.min.css" />
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link href='http://fonts.googleapis.com/css?family=Exo+2:200,700,100italic,600,200italic,500italic,300,400italic,100,300italic,800,900,400,900italic,700italic,800italic,600italic,500' rel='stylesheet' type='text/css'>
+		<!-- <link rel="stylesheet" type="text/css" href="js/vendor/fullpage.js/jquery.fullPage.css" /> -->
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="clearfix">
+				<span>Mads Møller Sørensen</span>
+				<h1>Developer - mostly frontend</h1>
+				<nav>
+					<!-- [NAV] -->
+				</nav>
+			</header>	
+			<div id="cbp-fbscroller" class="cbp-fbscroller">
+				<nav id="menu">
+					<a data-menuanchor="fbsection1" href="#fbsection1" class="active">Section 1</a>
+					<a data-menuanchor="fbsection2" href="#fbsection2">Section 2</a>
+					<a data-menuanchor="fbsection3" href="#fbsection3">Section 3</a>
+					<a data-menuanchor="fbsection4" href="#fbsection4">Section 4</a>
+					<a data-menuanchor="fbsection5" href="#fbsection5">Section 5</a>
+				</nav>
+				<section id="fbsection1">
+          <div class="flex-wrap">
+            <div class="flex-col-6">              
+              <div class="marvel-device ipad silver">
+                  <div class="camera"></div>
+                  <div class="screen">
+                      <br>
+                      <br>
+                      <h4 style="color:white;padding:0 4em;">I know responsive design, and like to solve as much as possible with css</h4>
+                  </div>
+                  <div class="home"></div>
+              </div>
+            </div>
+          </div>
 
-  <title>mads.ms</title>
-  <link rel="shortcut icon" href="favicon.ico" />
-  
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300|Montserrat:700|Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="stylesheets/screen.css"/>
-</head>
-<body>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        </section>
+				<section id="fbsection2">
+      
+          <div class="flex-wrap">     
+            <div class="flex-col-2">
+              <div style="background-image:url(images/home/html5.png)" class="img-circle img-thumbnail"></div>
+            </div>
+            <div class="flex-col-2">
+              <div style="background-image:url(images/home/css3.png)" class="img-circle img-thumbnail"></div>
+            </div>
+            <div class="flex-col-2">
+              <div style="background-image:url(images/home/angularjs-logo.png)" class="img-circle img-thumbnail"  ui-scrollfix="+200"></div>
+            </div>            
+            <div class="flex-col-2">
+              <div style="background-image:url(images/home/wordpress.png)" class="img-circle img-thumbnail"></div>
+            </div>
+            <div class="flex-col-2">
+              <div style="background-image:url(images/home/PHP-logo.png)" class="img-circle img-thumbnail"></div>
+            </div>
+            <div class="flex-col-2">
+              <div style="background-image:url(images/home/mysql.png)" class="img-circle img-thumbnail"></div>
+            </div>      
+          </div>
+          <div class="flex-wrap">
+            <div class="flex-col-2">
+              <div style="background-image:url(images/home/sass.png)" class="img-circle img-thumbnail"></div>
+            </div>
+            <div class="flex-col-2">
+              <div style="background-image:url(images/home/compass.png)" class="img-circle img-thumbnail"></div>
+            </div>
+            <div class="flex-col-2">
+              <div style="background-image:url(images/home/bootstrap.png)" class="img-circle img-thumbnail"></div>
+            </div>
+            <div class="flex-col-2">
+              <div style="background-image:url(images/home/grunt-logo.png)" class="img-circle img-thumbnail"></div>
+            </div>
+            <div class="flex-col-2">
+              <div style="background-image:url(images/home/d3.png)" class="img-circle img-thumbnail"></div>
+            </div>
+            <div class="flex-col-2">
+              <div style="background-image:url(images/home/github.png)" class="img-circle img-thumbnail"></div>
+            </div>
+          </div>
 
-    ga('create', 'UA-48558377-1', 'mads.ms');
-  </script>
-  
-  <div ng-include="'/views/partials/header.html'"></div>
+        </section>
+				<section id="fbsection3"></section>
+				<section id="fbsection4"></section>
+				<section id="fbsection5">
+					
+					<div class="flex-wrap">
+						<div class="flex-col-6">							
+							<div class="marvel-device iphone6 silver">
+							    <div class="top-bar"></div>
+							    <div class="sleep"></div>
+							    <div class="volume"></div>
+							    <div class="camera"></div>
+							    <div class="sensor"></div>
+							    <div class="speaker"></div>
+							    <div class="screen">
+							    	<br><br><br>
+							        <h4 style="color:black;padding:0 2em;">I know responsive design, and like to solve as much as possible with css</h4>
+							    </div>
+							    <div class="home"></div>
+							    <div class="bottom-bar"></div>
+							</div>
 
-  <div ui-view class="content"></div>
+						</div>
+						<div class="flex-col-6">
+							
+							<div class="marvel-device iphone6plus black">
+							    <div class="top-bar"></div>
+							    <div class="sleep"></div>
+							    <div class="volume"></div>
+							    <div class="camera"></div>
+							    <div class="sensor"></div>
+							    <div class="speaker"></div>
+							    <div class="screen">
+							    	<br><br><br>
+							        <h4 style="color:black;font-size:1.4em;">And icon fonts</h4>
+							    </div>
+							    <div class="home"></div>
+							    <div class="bottom-bar"></div>
+							</div>
 
-  <!-- <footer ui-view="footer"></footer>   -->
-  <footer ng-include="'/views/partials/footer.html'"></footer>  
+						</div>
+					</div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-  <script src="js/vendor/bootstrap.min.js"></script>
-  <script src="bower_components/angularjs-seed/dist/angular.min.js"></script>
-  <script src="js/angular-ui-router.min.js"></script>
+				</section>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>	
+		<!-- // <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>	 -->
+		<script src="js/jquery.easing.min.js"></script>		
+		<script src="js/waypoints.min.js"></script>		
+		<script src="js/jquery.debouncedresize.js"></script>
+		<script src="js/cbpFixedScrollLayout.js"></script>		
+		<script src="js/vendor/jquery.slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="js/vendor/fullpage.js/jquery.fullPage.min.js"></script>
 
-  <script src="js/vendor/angulartics.js"></script>
-  <script src="js/vendor/angulartics-ga.js"></script>
-
-  <script src="bower_components/angular-ui-utils/ui-utils.min.js"></script>
-  <script src="bower_components/angular-ui-map/ui-map.js"></script>
-  
-  <script src="js/vendor/mapStyles.js"></script>
-  <script src="js/vendor/fontawesome-markers.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCghmWqgch4HYshlkvJ6dniuICou-H61QA&v=3.exp&sensor=false&callback=onGoogleReady"></script>
-
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/TweenMax.min.js"></script>
-
-  <script src="js/app.js"></script>
-  <script src="js/services.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/filters.js"></script>
-  <script src="js/directives.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('[data-toggle=offcanvas]').click(function () {
-        $('.row-offcanvas').toggleClass('active')
-      });
-    });
-  </script>
-</body>
+		<script>
+			$(function() {
+				cbpFixedScrollLayout.init();
+				// $(document).ready(function() {
+				//     $('#cbp-fbscroller').fullpage({
+				//     	sectionSelector: 'section',
+				//     	anchors: ['fbsection1', 'fbsection2', 'fbsection3', 'fbsection4', 'fbsection5'],
+				//     	menu: '#menu'
+				//     });
+				// });
+			});
+		</script>
+	</body>
 </html>
