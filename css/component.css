@@ -130,8 +130,11 @@ section {
 	-webkit-filter:grayscale(100%);
 	opacity: 0.8;
 	background-clip: padding-box;
+	-webkit-transition: opacity 0.25s ease-in;
 }
-
+.flex-col-2 div:hover {
+	opacity: 1;
+}
 
 .ipad .screen {
 	background: #0d3477;
@@ -235,7 +238,7 @@ svg text {
   fill: url('#pattern');
 }
 #fbsection3 {
-	padding-top: 40vh;
+	padding-top: 35vh;
 }
 
 
