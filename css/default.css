@@ -34,7 +34,7 @@ a:hover {
 
 .container > header {
 	padding: 2.875em 1.875em 1.875em;
-	position: fixed;
+	position: absolute;
 	z-index: 1000;
 	width: 60%;
 	left: 20%;
@@ -50,7 +50,7 @@ a:hover {
 
 .container > header span {
 	display: block;
-	font-weight: 200;
+	font-weight: 300;
 	font-size: 2em;
 	text-transform: uppercase;
 	letter-spacing: 0.5em;

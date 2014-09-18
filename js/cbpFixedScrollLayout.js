@@ -43,6 +43,30 @@ var cbpFixedScrollLayout = (function() {
 			if( direction === 'up' ) { changeNav( $( this ) ); }
 		}, { offset: '-30%' } );
 
+
+		config.$sections.waypoint( function( direction ) {
+			if( direction === 'down' ) { 
+				// console.log('nop');
+				$('.arrow-hint').fadeOut('fast');
+				$el = $( this ).find('.sneak'); 
+
+				if (!$el.is(':visible')) { 
+		          $el.fadeIn(500);
+		        }
+		        
+				
+			}
+		}, { offset: '-70%' } ).waypoint( function( direction ) {
+			if( direction === 'up' ) { 
+				// console.log('yup');
+				$el = $( this ).find('.sneak'); 
+				if ($el.is(':visible')) { 
+		          $el.fadeOut(500);
+		        }
+		        
+			}
+		}, { offset: '-10%' } );
+
 		// on window resize: the body is scrolled to the position of the current section
 		$( window ).on( 'debouncedresize', function() {
 			scrollAnim( config.$sections.eq( config.currentLink ).offset().top );
