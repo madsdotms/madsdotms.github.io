@@ -241,6 +241,24 @@ svg text {
 	padding-top: 35vh;
 }
 
+@media (max-width: 767px) {
+	
+	.ipad {display: none;}
+	.cbp-fbscroller > nav {display: none;}
+	.flex-col-2 div {
+		border: 2px solid rgba(255,255,255,0.8);
+	}
+	.flex-col-2 {
+		width:10%;
+		margin-left: 2%;
+		margin-right: 2%;
+		align-self:center;
+		/*padding-top:100%;*/
+	}
+}
+
+
+
 
 @-webkit-keyframes arrow2{0%{opacity:1;-webkit-transform:translate(0,0);transform:translate(0,0)}90%{opacity:1;-webkit-transform:translate(0,0);transform:translate(0,0)}100%{opacity:0;-webkit-transform:translate(0,36px);transform:translate(0,36px)}}
 @-webkit-keyframes arrow1{0%{opacity:0;-webkit-transform:translate(0,0);transform:translate(0,0)}90%{opacity:0;-webkit-transform:translate(0,0);transform:translate(0,0)}100%{opacity:1;-webkit-transform:translate(0,36px);transform:translate(0,36px)}}
