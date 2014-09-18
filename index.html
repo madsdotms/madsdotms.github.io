@@ -205,7 +205,9 @@
           center: new google.maps.LatLng(55.679156, 12.552882),
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           styles: mapStyle,
-          scrollwheel: false
+          scrollwheel: false,
+          panControl: false,
+          draggable: false
       };
 
       var map = new google.maps.Map(document.getElementById('map'), myOptions);

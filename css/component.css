@@ -249,11 +249,16 @@ svg text {
 		border: 2px solid rgba(255,255,255,0.8);
 	}
 	.flex-col-2 {
-		width:10%;
+		width:25%;
 		margin-left: 2%;
 		margin-right: 2%;
+		margin-top: 2%;
+		margin-bottom: 2%;
 		align-self:center;
 		/*padding-top:100%;*/
+	}
+	.flex-wrap-alt {
+		flex-wrap:wrap;
 	}
 }
 
