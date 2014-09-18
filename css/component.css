@@ -260,6 +260,10 @@ svg text {
 	.flex-wrap-alt {
 		flex-wrap:wrap;
 	}
+	.container > header {
+		width: 100%;
+		left:0;
+	}
 }
 
 
