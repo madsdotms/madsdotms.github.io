@@ -1,66 +1,351 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>		
-	<!-- 	
-	 _____ ______   ________  ________  ________           ___  ________   ________     
-	|\   _ \  _   \|\   __  \|\   ___ \|\   ____\         |\  \|\   ___  \|\   ____\    
-	\ \  \\\__\ \  \ \  \|\  \ \  \_|\ \ \  \___|_        \ \  \ \  \\ \  \ \  \___|    
-	 \ \  \\|__| \  \ \   __  \ \  \ \\ \ \_____  \        \ \  \ \  \\ \  \ \  \       
-	  \ \  \    \ \  \ \  \ \  \ \  \_\\ \|____|\  \        \ \  \ \  \\ \  \ \  \____  
-	   \ \__\    \ \__\ \__\ \__\ \_______\____\_\  \        \ \__\ \__\\ \__\ \_______\
-	    \|__|     \|__|\|__|\|__|\|_______|\_________\        \|__|\|__| \|__|\|_______|
-	                                      \|_________|                                  
-	                                                                                    	                                                           
-	-->
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>mads.ms - online resume</title>
-		
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/devices.min.css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/default.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-		<script src="js/modernizr.custom.js"></script>
-	</head>
-	<body>
-		<div class="container-fluid">
-			<div class="row">
-				<header class="col-xs-6 height-100vh">				
-					<h1>Mads</h1>
-					<h1>Møller</h1>
-					<h1>Sørensen</h1>					
-				</header>
-				<div class="col-xs-6 red height-100vh">
-					<h1 class="mega white">CV</h1>
-				</div>
-			</div>									
-		</div>
-		<div class="container">
-			<section id="cv">
-				<article>
-					<h2>Natur-Energi / Gul Strøm</h2>
-				</article>	
+<html lang="en">
+  <head>
+    <!--  
+       _____ ______   ________  ________  ________           ___  ________   ________     
+      |\   _ \  _   \|\   __  \|\   ___ \|\   ____\         |\  \|\   ___  \|\   ____\    
+      \ \  \\\__\ \  \ \  \|\  \ \  \_|\ \ \  \___|_        \ \  \ \  \\ \  \ \  \___|    
+       \ \  \\|__| \  \ \   __  \ \  \ \\ \ \_____  \        \ \  \ \  \\ \  \ \  \       
+        \ \  \    \ \  \ \  \ \  \ \  \_\\ \|____|\  \        \ \  \ \  \\ \  \ \  \____  
+         \ \__\    \ \__\ \__\ \__\ \_______\____\_\  \        \ \__\ \__\\ \__\ \_______\
+          \|__|     \|__|\|__|\|__|\|_______|\_________\        \|__|\|__| \|__|\|_______|
+                                            \|_________|                                  
+                                                                                                                                                       
+      -->
+        
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resumé of developer Mads Møller Sørensen</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet" >
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+        <!-- IE8 polyfills fra cdn -->        
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+  </head>
+  <body id="top">
+        <header id="home">
+          <nav>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                  <nav class="pull">
+                    <ul class="top-nav">
+                      <li><a href="#intro">Introduction <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#strengths">Strengths <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#experience">Experience <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#education">Education <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <!-- <li><a href="#team">Team <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li> -->
+                      <li><a href="#contact">Get in Touch <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <section class="hero" id="hero">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-right navicon">
+                  <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-10 col-md-offset-1 text-center inner">
+                  <h1 class="animated fadeInDown">MADS MØLLER SØRENSEN</h1>
+                  <p class="animated fadeInUp delay-05s text-white">Digital resumé of frontend developer <em>Mads Møller Sørensen</em></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                  <a href="#intro" class="learn-more-btn">Let's do this</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </header>
+        <section class="intro text-center section-padding" id="intro">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">Frontend developer with a keen interest in design & ux</h1>
+                <p>Hi there, I am a frontend developer, proficient in PHP & MySQL. I know my way around a linux server, and have experience setting up apache and nginx. I have experience setting up automatic deployment environments, with post-deploy SSH commands (Composer, PHP-cli etc.). CMS wise I have worked with Wordpress for several years, I have a lot of experience in best practice. But I am primarily a frontend developer, and these technologies and frameworks are almost always present in my workflow: grunt and bower, Bootstrap framework (SASS version), AngularJS.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="features text-center section-padding" id="strengths">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">Some of my strengths</h1>
+                <div class="features-wrapper">
+                  <div class="col-md-4 wp2">
+                    <div class="icon">
+                      <i class="fa fa-laptop shadow"></i>
+                    </div>
+                    <h2>Eye for Digital Design & UX</h2>
+                    <p>I have decent <b>Photoshop</b> skills and I'm passionate about good design, that also follows good UX patterns. This includes performance, through fast load-times, caching etc.</p>
+                  </div>
+                  <div class="col-md-4 wp2 delay-05s">
+                    <div class="icon">
+                      <i class="fa fa-code shadow"></i>
+                    </div>
+                    <h2>Technologies</h2>
+                    <p>I've had a strong focus on <b>AngularJS</b> for the past two years, and I'm still excited about it's various features: routing, two-way data binding, directives (while we wait for web components).</p>
+                  </div>
+                  <div class="col-md-4 wp2 delay-1s">
+                    <div class="icon">
+                      <i class="fa fa-heart shadow"></i>
+                    </div>
+                    <h2>Staying current</h2>
+                    <p>I like to keep in the know about new exiting tools, and try them out. Recently I have taken up <b>Node.js</b> in connection with a personal home-automation project. And have read with interest the PayPal case, and how they have released krakenjs.</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="text-center" id="experience">
+          <div class="container-fluid nopadding responsive-services">
+            <div class="wrapper">
+              <div class="iphone">
+                <div class="wp3"></div>
+              </div>
+              <div class="fluid-white"></div>
+            </div>
+            <div class="container-fluid designs">
+              <div class="row">
+                <div class="col-md-6 col-md-offset-6 text-left">
+                    
+                        <h1 class="arrow text-center">Work experience</h1>
+                        <p><b>may 2014 - present:</b> Natur-Energi A/S</p>
+                        <p>
+                          I have been improving all aspects of the best practice Wordpress & frontend development. Put all sites in github, made sure Wordpress and plugins are loaded with php Composer, and the sites are deployed with deployHQ. I have been introduced responsive email templates. I have also revised and improved the google analytics setup. I am currently working and an all new responsive Angularjs based self-service portal - that will serve in excess of 100.00 customers.
+                        </p>
+                        <div class="cv-divider"></div>
+                        <p><b>november 2010 - april 2014:</b> Plant</p>
+                        <p>
+                          At this digital ad agency, I have gained great experiences through a variety of digital solutions and technologies ranging from Facebook Apps, PhoneGap apps, and all types of websites and landing pages. I introduced angularJS to the agency in '13 and have held numerous internal presentations (technical) on the subject since. Also introduced various workflow improvements including Grunt and Bower. At Plant I worked with customers like Microsoft, Top Danmark, FKN, Gigtforeningen, Eli Lilly, Kræftens bekæmpelse, Nykredit, Aller, Mercedes etc.
+                        </p>
+                        <div class="cv-divider"></div>
+                        <p><b>2009 - 2010</b> Freelance</p>
+                        <div class="cv-divider"></div>
+                        <p><b>2008 - 2009</b> Ad Pepper Media</p>
 
-				<article>
-					<h2>Plant</h2>
-				</article>	
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="swag text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <h1>Keep on <span><em>scrollin'</em></span></h1>
+                <a href="#portfolio" class="down-arrow-btn"><i class="fa fa-chevron-down"></i></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio text-center section-padding" id="portfolio">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 text-center">
+                <h1 class="arrow text-center">Education</h1>
 
+                <strong>2002-2005</strong>
+                <p><em>BSc in Business Administration and Computer Science, Copenhagen Business School</em></p>
 
-			</section>
+                <strong>1999-2002</strong>
+                <p><em>Matematisk Student, Frederiksberg Gymnasium</em></p>
 
-
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>	
-		<!-- // <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>	 -->
-		<script src="js/jquery.easing.min.js"></script>		
-		<script src="js/waypoints.min.js"></script>		
-		
-
-		<script>
-			
-		</script>
-	</body>
-</html>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="ignite-cta text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <a href="#experience" class="ignite-btn">Work experience</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <section class="team text-center section-padding" id="team">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">We're a team that adore what we do</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="team-wrapper">
+                <div id="teamSlider">
+                  <ul class="slides">
+                    <li>
+                      <div class="col-md-4 wp5">
+                        <img src="img/team-01.png" alt="Team Member">
+                        <h2>Jon Snow</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-4 wp5 delay-05s">
+                        <img src="img/team-02.png" alt="Team Member">
+                        <h2>Cersei Lannister</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-4 wp5 delay-1s">
+                        <img src="img/team-03.png" alt="Team Member">
+                        <h2>Jamie Lannister</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-md-4 wp5">
+                        <img src="img/team-01.png" alt="Team Member">
+                        <h2>Jon Snow</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-4 wp5 delay-05s">
+                        <img src="img/team-02.png" alt="Team Member">
+                        <h2>Cersei Lannister</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-4 wp5 delay-1s">
+                        <img src="img/team-03.png" alt="Team Member">
+                        <h2>Jamie Lannister</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+        <section class="subscribe text-center">
+          <div class="container">
+            <h1><i class="fa fa-paper-plane"></i><span>Say hello</span></h1>
+            <form action="#">
+              <input type="text" name="" value="" placeholder="Message" required>
+              <input type="submit" name="" value="Send">
+            </form>
+          </div>
+        </section>
+        <section class="dark-bg text-center section-padding contact-wrap" id="contact">
+          <a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">Get in touch</h1>
+              </div>
+            </div>
+            <div class="row contact-details">
+              <div class="col-md-4">
+                <div class="light-box box-hover">
+                  <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
+                  <p>Frederiksberg, Copenhagen</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="light-box box-hover">
+                  <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
+                  <p>+45 20233252</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="light-box box-hover">
+                  <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
+                  <p><a href="mailto:m@mads.ms">m@mads.ms</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="social-buttons">
+                  <li><a href="http://dk.linkedin.com/pub/mads-m%C3%B8ller-s%C3%B8rensen/36/911/a5b" target="_blank" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+                  <!-- <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="legals">
+                  <li><a href="#hero">Go to top</a></li>
+                  <!-- <li><a href="#">Legals</a></li> -->
+                </ul>
+              </div>
+              <div class="col-md-6 credit">
+                <p>mads.ms</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/modernizr.js"></script>
+      </body>
+    </html>
